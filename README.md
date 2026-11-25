@@ -1,14 +1,14 @@
 #### **[[ENGLISH]](#english)**
 
 <a id="spanish"></a>
-# cWav
+# cWavDecoder
 
-`cWav` es una librería ligera y de alto rendimiento para ESP32 diseñada para cargar y decodificar archivos WAV comprimidos (tanto en formato propio `cwav` basado en curvas spline y tablas LUT de 8 bits, como en formatos estándar G.711 $\mu$-law y A-law) directamente desde LittleFS hacia RAM o PSRAM.
+`cWavDecoder` es una librería ligera y de alto rendimiento para ESP32 diseñada para cargar y decodificar archivos WAV comprimidos (tanto en formato propio `cWavDecoder` basado en curvas spline y tablas LUT de 8 bits, como en formatos estándar G.711 $\mu$-law y A-law) directamente desde LittleFS hacia RAM o PSRAM.
 
 ## ✨Características
 
 - Decodificación ultrarrápida y de bajo consumo de memoria (8 bits por muestra en RAM).
-- Soporte nativo para archivos WAV con subchunk personalizado `cwav` (descompresión ZigZag + interpolación por splines cúbicos para generar la LUT de 256 valores).
+- Soporte nativo para archivos WAV con subchunk personalizado `cWavDecoder` (descompresión ZigZag + interpolación por splines cúbicos para generar la LUT de 256 valores).
 - Soporte integrado para archivos WAV estándar G.711 **A-law** (formato `6`) y **$\mu$-law** (formato `7`) con generación dinámica de tablas LUT al vuelo (sin gastar memoria flash en tablas estáticas).
 - Detección y asignación automática de memoria **PSRAM** en placas ESP32-S3 cuando está disponible, con respaldo automático a RAM interna.
 - Extracción automática de metadatos de samplers desde el chunk `smpl` (`rootNote`, `loopStart` y `loopEnd`).
@@ -24,7 +24,7 @@
 ### Opción 1: Desde el Gestor de Librerías de Arduino (Recomendado)
 1. Abre el **Arduino IDE**.
 2. Ve al menú **Herramientas** > **Gestionar bibliotecas...** (o presiona `Ctrl + Shift + I` / `Cmd + Shift + I`).
-3. En el buscador, escribe **cWav**.
+3. En el buscador, escribe **cWavDecoder**.
 4. Selecciona la librería y haz clic en **Instalar**.
 
 ### Opción 2: Instalación Manual
@@ -38,7 +38,7 @@
 ```cpp
 #include <Arduino.h>
 #include <LittleFS.h>
-#include <cWav.h>
+#include <cWavDecoder.h>
 
 void setup() {
   Serial.begin(115200);
@@ -104,7 +104,7 @@ En la carpeta `examples` del repositorio encontrarás ejemplos listos para compi
 ## 🤝 Contribuciones y Apoyo
 ¡Las contribuciones, *issues* y sugerencias son más que bienvenidas! Si tienes ideas para mejorar la librería o encuentras algún problema🐛, no dudes en abrir un *Issue* o enviar un *Pull Request*.
 
-Si `cWav` te ha sido de utilidad, **considera darle una ⭐ al repositorio**. Es una gran forma de apoyar el proyecto y ayuda a que otros desarrolladores de la comunidad puedan encontrarlo.
+Si `cWavDecoder` te ha sido de utilidad, **considera darle una ⭐ al repositorio**. Es una gran forma de apoyar el proyecto y ayuda a que otros desarrolladores de la comunidad puedan encontrarlo.
 
 ## ✍🏼Autor
 Desarrollado y mantenido por **Holman Buenaventura**.
@@ -114,14 +114,14 @@ Desarrollado y mantenido por **Holman Buenaventura**.
 #### **[[SPANISH]](#spanish)**
 
 <a id="english"></a>
-# cWav
+# cWavDecoder
 
-`cWav` is a lightweight, high-performance library for ESP32 designed to load and decode compressed WAV files (both the custom `cwav` spline-curve 8-bit LUT format and standard G.711 $\mu$-law and A-law formats) directly from LittleFS into RAM or PSRAM.
+`cWavDecoder` is a lightweight, high-performance library for ESP32 designed to load and decode compressed WAV files (both the custom `cWavDecoder` spline-curve 8-bit LUT format and standard G.711 $\mu$-law and A-law formats) directly from LittleFS into RAM or PSRAM.
 
 ## ✨Features
 
 - Ultra-fast decoding with minimal memory footprint (8 bits per sample in RAM).
-- Native support for WAV files with custom `cwav` subchunk (ZigZag decompression + cubic spline interpolation to build the 256-entry LUT).
+- Native support for WAV files with custom `cWavDecoder` subchunk (ZigZag decompression + cubic spline interpolation to build the 256-entry LUT).
 - Built-in support for standard G.711 **A-law** (format `6`) and **$\mu$-law** (format `7`) WAV files with on-the-fly dynamic LUT generation (zero flash wasted on static tables).
 - Automatic **PSRAM** detection and allocation on ESP32-S3 boards when available, with automatic fallback to internal RAM.
 - Automatic extraction of sampler metadata from the `smpl` chunk (`rootNote`, `loopStart`, and `loopEnd`).
@@ -137,7 +137,7 @@ Desarrollado y mantenido por **Holman Buenaventura**.
 ### Option 1: From the Arduino Library Manager (Recommended)
 1. Open the **Arduino IDE**.
 2. Go to **Tools** > **Manage Libraries...** (or press `Ctrl + Shift + I` / `Cmd + Shift + I`).
-3. In the search bar, type **cWav**.
+3. In the search bar, type **cWavDecoder**.
 4. Select the library and click **Install**.
 
 ### Option 2: Manual Installation
@@ -151,7 +151,7 @@ Desarrollado y mantenido por **Holman Buenaventura**.
 ```cpp
 #include <Arduino.h>
 #include <LittleFS.h>
-#include <cWav.h>
+#include <cWavDecoder.h>
 
 void setup() {
   Serial.begin(115200);
@@ -217,7 +217,7 @@ In the `examples` folder of the repository, you will find ready-to-compile examp
 ## 🤝 Contributions and Support
 Contributions, issues, and suggestions are more than welcome! If you have ideas for improving the library or encounter any problems 🐛, don't hesitate to open an issue or submit a pull request.
 
-If you found `cWav` useful, please consider giving the repository a ⭐. It's a great way to support the project and helps other developers in the community find it.
+If you found `cWavDecoder` useful, please consider giving the repository a ⭐. It's a great way to support the project and helps other developers in the community find it.
 
 ## ✍🏼Author
 Developed and maintained by **Holman Buenaventura**.
