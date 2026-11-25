@@ -8,7 +8,7 @@
 ## ✨Características
 
 - Decodificación ultrarrápida y de bajo consumo de memoria (8 bits por muestra en RAM).
-- Soporte nativo para archivos WAV con subchunk personalizado `cWavDecoder` (descompresión ZigZag + interpolación por splines cúbicos para generar la LUT de 256 valores).
+- Soporte nativo para archivos WAV con subchunk personalizado `cWav` (descompresión ZigZag + interpolación por splines cúbicos para generar la LUT de 256 valores).
 - Soporte integrado para archivos WAV estándar G.711 **A-law** (formato `6`) y **$\mu$-law** (formato `7`) con generación dinámica de tablas LUT al vuelo (sin gastar memoria flash en tablas estáticas).
 - Detección y asignación automática de memoria **PSRAM** en placas ESP32-S3 cuando está disponible, con respaldo automático a RAM interna.
 - Extracción automática de metadatos de samplers desde el chunk `smpl` (`rootNote`, `loopStart` y `loopEnd`).
@@ -121,7 +121,7 @@ Desarrollado y mantenido por **Holman Buenaventura**.
 ## ✨Features
 
 - Ultra-fast decoding with minimal memory footprint (8 bits per sample in RAM).
-- Native support for WAV files with custom `cWavDecoder` subchunk (ZigZag decompression + cubic spline interpolation to build the 256-entry LUT).
+- Native support for WAV files with custom `cWav` subchunk (ZigZag decompression + cubic spline interpolation to build the 256-entry LUT).
 - Built-in support for standard G.711 **A-law** (format `6`) and **$\mu$-law** (format `7`) WAV files with on-the-fly dynamic LUT generation (zero flash wasted on static tables).
 - Automatic **PSRAM** detection and allocation on ESP32-S3 boards when available, with automatic fallback to internal RAM.
 - Automatic extraction of sampler metadata from the `smpl` chunk (`rootNote`, `loopStart`, and `loopEnd`).
