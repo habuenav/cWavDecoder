@@ -3,7 +3,7 @@
 <a id="spanish"></a>
 # cWavDecoder
 
-`cWavDecoder` es una librería ligera y de alto rendimiento para ESP32 diseñada para cargar y decodificar archivos WAV comprimidos (tanto en formato propio `cWavDecoder` basado en curvas spline y tablas LUT de 8 bits, como en formatos estándar G.711 $\mu$-law y A-law) directamente desde LittleFS hacia RAM o PSRAM.
+`cWavDecoder` es una librería ligera y de alto rendimiento para ESP32 diseñada para cargar y decodificar archivos WAV comprimidos (tanto en formato propio `cWav` basado en curvas spline y tablas LUT de 8 bits, como en formatos estándar G.711 $\mu$-law y A-law) directamente desde LittleFS hacia RAM o PSRAM.
 
 ## ✨Características
 
@@ -116,7 +116,7 @@ Desarrollado y mantenido por **Holman Buenaventura**.
 <a id="english"></a>
 # cWavDecoder
 
-`cWavDecoder` is a lightweight, high-performance library for ESP32 designed to load and decode compressed WAV files (both the custom `cWavDecoder` spline-curve 8-bit LUT format and standard G.711 $\mu$-law and A-law formats) directly from LittleFS into RAM or PSRAM.
+`cWavDecoder` is a lightweight, high-performance library for ESP32 designed to load and decode compressed WAV files (both the custom `cWav` spline-curve 8-bit LUT format and standard G.711 $\mu$-law and A-law formats) directly from LittleFS into RAM or PSRAM.
 
 ## ✨Features
 
