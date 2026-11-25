@@ -1,0 +1,15 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+cWavInfo	KEYWORD1
+cWavBitReader	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+cWavLoad	KEYWORD2
+cWavAlloc	KEYWORD2
+cWavBuildLUT	KEYWORD2
+cWavUnpackKnots	KEYWORD2
+cWavBuildG711Lut	KEYWORD2
+cWavDecodeZigZag	KEYWORD2
